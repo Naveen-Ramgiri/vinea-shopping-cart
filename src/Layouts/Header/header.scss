@@ -1,0 +1,148 @@
+@import '../../Sass/Base/variables';
+
+.header {
+    background-color: $primary-color;
+    padding: $padding-lv-3 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+
+    &__content {
+        @include flex-props;
+        align-items: center;
+    }
+
+    &__logo {
+
+        img {
+            width: 90px;
+        }
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__categories {
+        ul {
+            display: flex;
+            list-style-type: none;
+            margin-bottom: 0;
+
+            li a {
+
+                text-decoration: none;
+                color: $teritary-color;
+                font-size: 16px;
+                margin-left: $margin-lv-3;
+                border-bottom: 1px solid $primary-color;
+                padding-bottom: $padding-lv-3;
+
+                &:hover,
+                &:focus {
+                    color: $teritary-color;
+                    border-bottom: 4px solid $teritary-color;
+                }
+
+                &:active {
+                    border-bottom: 4px solid $teritary-color;
+                }
+
+                .active {
+                    border-bottom: 4px solid $teritary-color;
+                }
+            }
+        }
+    }
+
+    &__icons {
+
+        span {
+            font-size: 20px;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            justify-content: flex-end;
+            margin-bottom: 0;
+
+            li {
+                margin-left: 20px;
+
+                &:first-child {
+                    margin-left: 0px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $teritary-color;
+                    font-size: 16px;
+
+                }
+            }
+
+            img {
+                vertical-align: middle;
+                height: 18px;
+            }
+
+            .itemnumbers {
+                position: relative;
+
+                .cart__icon {
+                    font-size: 20px;
+                    vertical-align: middle;
+                    position: inherit;
+                }
+
+                .cart__count {
+                    padding-left: $padding-lv-1;
+                    padding-top: $padding-lv-1 - 4;
+                    position: absolute;
+                    top: -5px;
+                    right: -11px;
+                    background: #000;
+                    color: #fff;
+                    width: 17px;
+                    height: 17px;
+                    border-radius: 50px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.sign {
+
+    .dropbtn {
+        padding-bottom: $padding-lv-6;
+    }
+
+    .dropdown-content {
+        right: 30px;
+        top: 45px;
+        left: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+}
+
+@include responsive(tablet) {
+    .header {
+        display: none;
+    }
+}
+
+@include responsive(phone) {
+    .header {
+        display: none;
+    }
+}

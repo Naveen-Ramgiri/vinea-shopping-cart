@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Source+Serif+Pro&display=swap");
+h1, h2, h3 {
+  font-family: "Source Serif Pro", serif;
+}
+
+.button-primary {
+  background-color: #E26A2C;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border-color: transparent;
+  padding: 5px 30px;
+  text-decoration: none;
+}
+.button-primary:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.button-secondary {
+  background-color: #FFFFFF;
+  font-size: 14px;
+  color: #E26A2C;
+  text-transform: uppercase;
+  padding: 5px 30px;
+  border: 2px solid #E26A2C;
+  text-decoration: none;
+}
+.button-secondary:hover {
+  color: #E26A2C;
+  text-decoration: none;
+}
+
+.fade.modal.show {
+  opacity: 1;
+  overflow-x: inherit;
+  overflow-y: inherit;
+}
+
+.modal.fade:not(.in).right .modal-dialog {
+  transform: translate3d(1%, 0, 0);
+}
+
+.modal-dialog {
+  width: 90% !important;
+  float: right;
+  margin: 10% 0 0 0;
+}
+
+.modal-content {
+  height: 100vh;
+}
+
+.modal-header {
+  background: #E5E5E7;
+}
+
+.modal-title {
+  color: #1D1D1B;
+}
+
+.btn-close {
+  font-size: 14px;
+}
+
+.modal-body {
+  padding: 10px 20px;
+}
+.modal-body label {
+  color: #172026;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.productlisting {
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+.productlisting a {
+  text-decoration: none;
+}
+.productlisting-mobile {
+  display: none;
+}
+.productlisting__title {
+  background-color: #1B252C;
+  position: relative;
+}
+.productlisting__title h3 {
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+  font-size: 32px;
+}
+.productlisting__title h3::before {
+  content: "";
+  background-color: #E26A2C;
+  width: 30%;
+  position: absolute;
+  height: 5px;
+  bottom: -15px;
+  left: 35%;
+}
+.productlisting__image {
+  background-color: #FFFFFF;
+}
+.productlisting__image img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.breadcrumbslist {
+  margin-top: 25px;
+}
+.breadcrumbslist__filter {
+  display: flex;
+  justify-content: space-between;
+}
+.breadcrumbslist__filter p {
+  font-size: 16px;
+}
+.breadcrumbslist select {
+  border: 1px solid #B5B7BC;
+  border-radius: 6px;
+  padding: 5px 20px;
+  color: #172026;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  margin-top: -15px;
+}
+
+.productfilter {
+  padding-top: 20px;
+}
+.productfilter .productfilters {
+  padding-right: 30px;
+}
+.productfilter .productfilters h4 {
+  font-size: 18px;
+}
+.productfilter .productfilters p {
+  border-top: 1px solid #dcdcdc;
+  padding-top: 10px;
+  font-size: 16px;
+}
+.productfilter .productfilters input[type=checkbox] {
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-top: 0;
+  border: 1px solid #91959C;
+}
+.productfilter .productfilters label {
+  font-weight: normal;
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.productfilter .productfilters a {
+  color: #181C24;
+  text-decoration: underline;
+  font-size: 14px;
+  margin-bottom: 20px;
+  display: block;
+}
+.productfilter .productfilters button {
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 15px;
+}
+.productfilter .productfilters .btn-1 {
+  background-color: #172026;
+}
+.productfilter .productfilters .btn-2 {
+  background-color: #FFFFFF;
+}
+.productfilter .productfilters .btn-3 {
+  background-color: #2D9D78;
+}
+.productfilter .productfilters .btn-4 {
+  background-color: #FDBA5E;
+}
+.productfilter .productfilters .btn-5 {
+  background-color: #87CEEB;
+}
+.productfilter .productfilters .btn-6 {
+  background-color: #E34850;
+}
+.productfilter .productfilters .btn-7 {
+  background-color: #6408D3;
+}
+.productfilter .productfilters .btn-8 {
+  background-color: #F9009A;
+}
+.productfilter .productfilters .btn-9 {
+  background-color: #EB7327;
+}
+.productfilter .productfilters .btn-10 {
+  background-color: #228B22;
+  margin-bottom: 15px;
+}
+
+.product-filter {
+  display: none;
+}
+.product-filter img {
+  width: 14px;
+}
+.product-filter button-secondary {
+  padding: 0px 5px;
+  text-transform: inherit;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.productlisting-desktop {
+  background-color: #1B252C;
+}
+.productlisting-desktop .aem-Grid.aem-Grid--12 {
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  display: flex !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 100% !important;
+  }
+  .breadcrumbslist__filter {
+    display: block !important;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .breadcrumbslist__filter p {
+    font-size: 16px;
+  }
+  .productfilters {
+    display: none;
+  }
+  .product__image img {
+    height: 332px;
+  }
+  .productlisting-desktop {
+    display: none;
+  }
+  .productlisting-mobile {
+    display: block;
+  }
+  .productlisting {
+    margin-top: -1px !important;
+  }
+  .productlisting__image.women {
+    background: url("./lady.png");
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .productlisting__image.women img {
+    display: none;
+    margin: 0px;
+  }
+  .productlisting__image.electronics {
+    background: url("../AccessoriesListings/accessories.png");
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .productlisting__image.electronics img {
+    display: none;
+    margin: 0px;
+  }
+  .productlisting__image.men {
+    background: url("../MenProductListings/men.png");
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .productlisting__image.men img {
+    display: none;
+    margin: 0px;
+  }
+  .productlisting__image.jewelery {
+    background: url("../JewelleryListings/jewellery.png");
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .productlisting__image.jewelery img {
+    display: none;
+    margin: 0px;
+  }
+  .productlisting__title {
+    width: 90%;
+    margin: auto;
+    padding: 100px 0;
+    height: auto !important;
+    margin-top: -10%;
+  }
+  .productlisting__title h3 {
+    font-size: 36px !important;
+  }
+  .productlisting__title h3::before {
+    top: 80% !important;
+  }
+  .breadcrumbslist__sort {
+    display: none;
+  }
+  .product-filter {
+    display: block;
+    text-align: center;
+    margin: 20px 0px;
+  }
+  .product-filter button {
+    background: #FFFFFF;
+    border: none;
+    outline: none;
+    color: #181C24;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1600px) {
+  .productlisting {
+    margin-top: 60px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .container {
+    width: 100% !important;
+  }
+  .productlisting {
+    margin-top: 0px;
+  }
+  .breadcrumbslist__filter {
+    display: block !important;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .breadcrumbslist__filter p {
+    font-size: 16px;
+  }
+  .productfilters {
+    display: none;
+  }
+  .product__image img {
+    height: 150px !important;
+  }
+  .productlisting-desktop {
+    display: none;
+  }
+  .productlisting-mobile {
+    display: block;
+  }
+  .productlisting__image.women {
+    background: url("./lady.png");
+    height: 200px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .productlisting__image.women img {
+    display: none;
+    margin: 0px;
+  }
+  .productlisting__image.electronics {
+    background: url("../AccessoriesListings/accessories.png");
+    height: 200px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .productlisting__image.electronics img {
+    display: none;
+    margin: 0px;
+  }
+  .productlisting__image.men {
+    background: url("../MenProductListings/men.png");
+    height: 200px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .productlisting__image.men img {
+    display: none;
+    margin: 0px;
+  }
+  .productlisting__image.jewelery {
+    background: url("../JewelleryListings/jewellery.png");
+    height: 200px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .productlisting__image.jewelery img {
+    display: none;
+    margin: 0px;
+  }
+  .productlisting__title {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0 !important;
+    height: auto !important;
+    margin-top: -10%;
+  }
+  .productlisting__title h3 {
+    font-size: 28px !important;
+  }
+  .productlisting__title h3:before {
+    top: 65% !important;
+  }
+  .breadcrumbslist__sort {
+    display: none;
+  }
+  .product-filter {
+    display: block;
+    text-align: center;
+    margin: 20px 0px;
+  }
+  .product-filter button {
+    background: #FFFFFF;
+    border: none;
+    outline: none;
+    color: #181C24;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}/*# sourceMappingURL=Productlisting.css.map */

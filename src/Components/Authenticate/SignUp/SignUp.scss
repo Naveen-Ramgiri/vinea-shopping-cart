@@ -1,0 +1,38 @@
+@import '../../../Sass/Base/variables';
+
+.text-danger {
+    color: #C9252D;
+}
+
+.invalid {
+    border-color: #C9252D;
+}
+
+.signup {
+    width: 50%;
+    margin: auto;
+    padding: $padding-lv-5 * 2 0;
+
+    h4 {
+        font-size: 24px;
+        margin-bottom: $margin-lv-3;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    .button-section {
+        text-align: center;
+    }
+}
+
+@include responsive(phone) {
+    .signup {
+        width: 100%;
+    }
+}

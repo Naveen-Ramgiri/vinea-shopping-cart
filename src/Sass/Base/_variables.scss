@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Source+Serif+Pro&display=swap');
+
+h1, h2, h3{
+    font-family: 'Source Serif Pro', serif;
+}
+$enable-rfs: false;
+$primary-color: #E26A2C;
+$secondary-color: #1B252C;
+$teritary-color: #FFFFFF;
+$footer-text: #545D63;
+$footer-head: #172026;
+$product-text:#172026;
+
+// mixins
+
+@mixin flex-props {
+    display: flex;
+    justify-content: space-between;
+}
+
+// padding variables
+
+$padding-lv-1: 5px;
+$padding-lv-2: 10px;
+$padding-lv-3: 15px;
+$padding-lv-4: 20px;
+$padding-lv-5: 25px;
+$padding-lv-6: 30px;
+$padding-lv-7: 35px;
+
+//  margin variables
+
+$margin-lv-1: 5px;
+$margin-lv-2: 10px;
+$margin-lv-3: 15px;
+$margin-lv-4: 20px;
+$margin-lv-5: 25px;
+$margin-lv-6: 30px;
+$margin-lv-7: 35px;
+
+// button style variables
+$button-bg-color: #1F39FF;
+$button-border-radius: 25px;
+$button-text-transform: uppercase;
+$button-font: 14px;
+
+.button-primary{
+    background-color: $primary-color;
+    font-size: $button-font;
+    color: $teritary-color;
+    text-transform: $button-text-transform;
+    border-color: transparent;
+    padding: $padding-lv-1 $padding-lv-6;
+    text-decoration: none;
+    
+    &:hover{
+        color: $teritary-color;
+        text-decoration: none;
+    }
+}
+
+.button-secondary{
+    background-color: $teritary-color;
+    font-size: $button-font;
+    color: $primary-color;
+    text-transform: $button-text-transform;
+    padding: $padding-lv-1 $padding-lv-6;
+    border: 2px solid $primary-color;
+    text-decoration: none;
+    
+    &:hover{
+        color: $primary-color;
+        text-decoration: none;
+    }
+}
+
+// Media queries
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (min-width: 320px) and (max-width: 767px) { @content };
+    }
+    @if $breakpoint == tablet {
+        @media only screen and (min-width: 768px) and (max-width: 991px) { @content };
+    }
+    @if $breakpoint == medium {
+        @media only screen and (min-width: 1024px) and (max-width: 1200px) { @content };
+    }
+    @if $breakpoint == desktop {
+        @media only screen and (min-width: 1440px) and (max-width: 1600px) { @content };
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 1920px) and (max-width: 2000px) { @content };
+    }
+}
+

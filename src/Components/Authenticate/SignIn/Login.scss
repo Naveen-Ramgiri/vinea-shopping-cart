@@ -1,0 +1,111 @@
+@import '../../../Sass/Base/variables';
+
+.sign {
+  .form-inner {
+    position: relative;
+    display: block;
+    background-color: #FFF;
+    padding: $padding-lv-4;
+    z-index: 2;
+    right: 160px;
+    width: 350px;
+    border: 1px solid #D1D3D6;
+    box-shadow: 0px 0px 16px #0000000D;
+
+    h4 {
+      font-size: 16px;
+    }
+  }
+
+  .error {
+    font-size: 14px;
+    color: #C9252D;
+    margin: $margin-lv-2 0;
+  }
+
+  .forgetpass {
+    margin-left: 0;
+    color: #181C24;
+    text-decoration: underline;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  .button-section {
+    text-align: center;
+
+    button {
+      width: 60%;
+      padding: 5px 20px;
+    }
+
+    .signup {
+      background-color: $teritary-color;
+      padding: $padding-lv-1 $padding-lv-4;
+      border: 2px solid $primary-color;
+      width: 60%;
+      font-size: 14px;
+      margin: auto;
+      color: $primary-color;
+    }
+  }
+
+}
+
+.signedin {
+
+  &__welcome {
+    background-color: $teritary-color;
+    width: 350px;
+    padding: $padding-lv-4;
+    box-shadow: 0px 0px 16px #0000000D;
+    border: 1px solid #D1D3D6;
+    position: absolute;
+    right: 0;
+    color: #333333;
+    font-size: 16px;
+  }
+
+  .signedout {
+    background-color: $teritary-color;
+    border: 0;
+    color: #333333;
+    font-size: 16px;
+  }
+
+}
+
+@include responsive(phone) {
+  .signedin {
+    width: 100%;
+    padding: $padding-lv-5 * 2 $padding-lv-3;
+
+    .button-section {
+      text-align: center;
+
+      .button-primary {
+        padding: $padding-lv-1;
+        width: 60%;
+      }
+
+      .signup {
+        background-color: #fff;
+        padding: $padding-lv-1 $padding-lv-4;
+        border: 2px solid #252BFF;
+        width: 60%;
+        font-size: 14px;
+        margin: auto;
+        color: #1F39FF;
+        border-radius: 25px;
+      }
+    }
+  }
+
+
+}

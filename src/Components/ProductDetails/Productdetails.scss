@@ -1,0 +1,321 @@
+@import '../../Sass/Base/variables';
+
+.productdetails {
+    margin: $margin-lv-6 0 $margin-lv-5 0;
+
+    &__slider {
+        padding-right: $padding-lv-3;
+
+        img {
+            width: 100%;
+            margin-bottom: $margin-lv-3;
+        }
+
+        div {
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+
+    &__left {
+        img {
+            width: 100%;
+        }
+
+        &-desc {
+            position: relative;
+            margin-top: $margin-lv-6;
+
+            h2 {
+                font-size: 36px;
+                color: $product-text;
+            }
+
+            h5 {
+                font-size: 20px;
+                color: $product-text;
+                font-weight: 600;
+                margin: $margin-lv-4 0;
+            }
+
+            p {
+                color: $product-text;
+                font-size: 16px;
+                padding-bottom: $padding-lv-4;
+            }
+
+            p::after {
+                content: "";
+                background-color: $primary-color;
+                width: 25%;
+                position: absolute;
+                height: 5px;
+                bottom: 0%;
+                left: 0;
+            }
+
+        }
+    }
+
+    &__right {
+        padding-left: $padding-lv-7;
+
+        .button-primary {
+            width: 60%;
+        }
+
+        &-title {
+            font-size: 36px;
+            color: $product-text;
+            margin-top: $margin-lv-4;
+        }
+
+        &-price {
+            color: $product-text;
+            font-size: 20px;
+        }
+
+        &-rating {
+            font-size: 14px;
+            color: $product-text;
+        }
+
+        &-description {
+            color: $product-text;
+            font-size: 14px;
+        }
+
+        &-space {
+            height: 100px;
+        }
+
+        &-icons {
+            display: flex;
+
+            p {
+                width: 50%;
+                font-size: 16px;
+                margin-top: $margin-lv-2;
+            }
+        }
+
+        h5 {
+            font-size: 20px;
+            color: $product-text;
+            margin-top: $margin-lv-2;
+            font-weight: 600;
+        }
+
+        hr {
+            margin: 10px 0;
+        }
+
+        &-colors img {
+            margin-right: $margin-lv-2;
+            border-radius: 6px;
+            width: 40px;
+            height: 35px;
+        }
+
+        &-colors span:nth-child(1) img {
+            background-color: #1aa7ec;
+        }
+
+        &-colors span:nth-child(2) img {
+            background-color: #ee6b6e;
+        }
+
+        &-colors span:nth-child(3) img {
+            background-color: #000;
+        }
+
+        &-colors span:nth-child(4) img {
+            background-color: #808080;
+            margin-right: 0;
+        }
+
+        &-size button {
+            border: 1px solid #dcdcdc;
+            border-radius: 6px;
+            background-color: $teritary-color;
+            margin-right: $margin-lv-1;
+            padding: $padding-lv-2 $padding-lv-3;
+            font-size: 14px;
+        }
+
+        &-quantity {
+            margin-bottom: $margin-lv-6;
+            margin-top: $margin-lv-4;
+
+            button {
+                background: #EAEBEB;
+                border: 2px solid #B5B8BA;
+                border-radius: 50%;
+                height: 32px;
+                width: 32px;
+            }
+
+            .increase-btn {
+                background: $teritary-color  !important;
+                border: 2px solid #B5B8BA;
+                border-radius: 50%;
+                height: 32px;
+                width: 32px;
+                font-size: 14px;
+            }
+
+            .qty-input {
+                border: 2px solid #91959C;
+                border-radius: 8px;
+                padding: $padding-lv-1 + 2 $padding-lv-7;
+                text-align: center;
+                margin: 0 $margin-lv-2;
+                font-size: 14px;
+                display: inline;
+            }
+
+            .button-primary {
+                width: 60%;
+            }
+
+        }
+
+        &__bottom {
+            margin-top: $margin-lv-6;
+        }
+
+        &-share {
+            width: 60%;
+            text-align: center;
+            margin-top: $margin-lv-4;
+
+            ul {
+
+                li {
+                    list-style-type: none;
+                    display: inline;
+                    margin: 0 $margin-lv-3;
+
+                    a {
+                        text-decoration: none;
+                        color: $product-text;
+                        font-size: 14px;
+
+                        i {
+                            font-size: 20px;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+
+        .read-or-hide {
+            border: 0px;
+            background-color: #fff;
+            color: $product-text;
+            cursor: pointer;
+            outline: none;
+            text-decoration: underline;
+        }
+
+    }
+}
+
+.productdetails__right-breadcrumb.mobile {
+    display: none;
+}
+
+@include responsive(desktop) {
+    .productdetails {
+        margin: 105px 0 25px 0;
+    }
+}
+
+@include responsive(phone) {
+
+    .productdetails {
+        margin: $margin-lv-4 0;
+
+        &__slider {
+            display: none;
+        }
+    }
+
+    .productdetails__right {
+        padding-left: 0px;
+
+        &-title {
+            font-size: 20px;
+        }
+
+        .button-primary {
+            padding: $padding-lv-1 $padding-lv-5 * 4 - $padding-lv-1;
+            width: 100%;
+        }
+
+        h5 {
+            font-size: 16px;
+        }
+
+        &-space {
+            height: 0;
+        }
+
+        &-quantity {
+            text-align: center;
+        }
+
+        .pro-details {
+            text-align: center;
+        }
+
+    }
+
+    .productdetails__left {
+        margin-top: $margin-lv-3;
+
+        &-desc {
+            h2 {
+                font-size: 20px;
+            }
+
+            h5 {
+                text-align: center;
+                font-size: 16px;
+            }
+            p{
+                font-size: 14px;
+            }
+            p:after {
+                left: 37%;
+            }
+        }
+    }
+
+    .productdetails__right-share {
+        text-align: center;
+        width: 100%;
+
+        img {
+            width: 19px;
+        }
+
+        ul {
+            width: 100%;
+        }
+    }
+
+    .productdetails__right-colors img {
+        width: 64px;
+    }
+
+    .productdetails__right-breadcrumb {
+        display: none;
+    }
+
+    .productdetails__right-breadcrumb.mobile {
+        display: block !important;
+    }
+
+}

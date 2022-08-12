@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Muli";
+  src: url("./Fonts/Muli/muli-regular.woff2") format("woff2"),
+    url("./Fonts/Muli/muli-regular.woff") format("woff"),
+    url("./Fonts/Muli/Muli-Regular.ttf") format("ttf");
+  font-weight: nnormal;
+  font-display: swap;
+}
+
+*{
+
+  -ms-overflow-style: none;
+
+}
+
+::-webkit-scrollbar {
+
+  display: none;
+
+}
+
+body {
+  font-family: "Muli", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+label{
+  font-weight: 600;
+}

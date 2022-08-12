@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Source+Serif+Pro&display=swap");
+h1, h2, h3 {
+  font-family: "Source Serif Pro", serif;
+}
+
+.button-primary {
+  background-color: #E26A2C;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border-color: transparent;
+  padding: 5px 30px;
+  text-decoration: none;
+}
+.button-primary:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.button-secondary {
+  background-color: #FFFFFF;
+  font-size: 14px;
+  color: #E26A2C;
+  text-transform: uppercase;
+  padding: 5px 30px;
+  border: 2px solid #E26A2C;
+  text-decoration: none;
+}
+.button-secondary:hover {
+  color: #E26A2C;
+  text-decoration: none;
+}
+
+.cart {
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
+.cart__productlayout {
+  margin-bottom: 25px;
+}
+.cart__productlayout ul {
+  margin-top: 20px;
+}
+.cart__productlayout ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.cart__productlayout ul li a {
+  color: #172026;
+  font-size: 14px;
+  text-decoration: none;
+}
+.cart__productlayout ul li a:hover {
+  text-decoration: none;
+}
+.cart__productlayout ul li a img {
+  width: 14px;
+}
+.cart__btn {
+  text-align: center;
+  margin-top: 45px;
+}
+.cart__btn .btn-1 {
+  background: #FFFFFF;
+  border: 2px solid #B5B8BA;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+}
+.cart__btn .qty-input {
+  border: 2px solid #B5B7BC;
+  border-radius: 8px;
+  padding: 7px 35px;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 10px;
+  display: inline;
+}
+.cart h1 {
+  color: #172026;
+  font-size: 32px;
+  position: relative;
+  margin-bottom: 35px;
+}
+.cart h1::before {
+  content: "";
+  background-color: #E26A2C;
+  width: 7%;
+  position: absolute;
+  height: 5px;
+  bottom: -25%;
+  left: 47%;
+}
+.cart__image img {
+  width: 100%;
+}
+.cart__details {
+  padding: 0 20px;
+  display: block;
+}
+.cart__details h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #172026;
+  margin-top: 0;
+}
+.cart__details p {
+  font-size: 14px;
+  color: #172026;
+  margin-bottom: 5px;
+}
+.cart__right {
+  border: 1px solid #D1D3D6;
+  padding: 15px 15px 25px 15px;
+}
+.cart__right h4 {
+  font-size: 20px;
+  color: #172026;
+  margin-bottom: 20px;
+}
+.cart__right p {
+  font-size: 14px;
+}
+.cart__right-subtotal {
+  display: flex;
+  justify-content: space-between;
+}
+.cart__right-coupon {
+  display: flex;
+  justify-content: space-between;
+}
+.cart__right-giftcard {
+  display: flex;
+  justify-content: space-between;
+}
+.cart__right-tax {
+  display: flex;
+  justify-content: space-between;
+}
+.cart__right-ship {
+  display: flex;
+  justify-content: space-between;
+}
+.cart__right-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.cart__right-total p {
+  font-weight: 600 !important;
+  font-size: 16px;
+}
+.cart__right-buttons {
+  text-align: center;
+}
+.cart__right-buttons .checkbtn {
+  padding: 10px 73px;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+.cart__right-buttons .checkbtn i {
+  padding-right: 10px;
+}
+.cart__right-buttons img {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
+.cart__content-empty img {
+  width: 100%;
+}
+
+.emptybasket {
+  font-size: 24px;
+}
+
+.cart__mobile {
+  display: none;
+}
+
+.dropbtn {
+  background-color: transparent;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 135px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: -100px;
+  padding: 10px 10px 5px 10px;
+}
+
+.dropdown-content a {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: #172026;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1600px) {
+  .cart {
+    margin-top: 85px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .cart__desktop ul {
+    padding-left: 20px;
+  }
+  .cart__btn input {
+    width: 60px;
+  }
+  .makeStyles-heading-2 {
+    font-size: 16px !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cart {
+    margin-top: 0px;
+  }
+  .cart h1 {
+    font-size: 36px;
+  }
+  .makeStyles-root-1 {
+    width: 100% !important;
+  }
+  .makeStyles-heading-2 {
+    font-size: 16px !important;
+  }
+  .MuiAccordionSummary-content {
+    display: block !important;
+  }
+  .cart__right {
+    border: 0;
+    margin-top: 20px;
+  }
+  .cart__desktop {
+    display: none;
+  }
+  .cart__mobile {
+    display: block;
+    padding-left: 10px;
+  }
+  .cart__mobile h5 {
+    margin-top: 0;
+  }
+  .cart__btn {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .cart {
+    margin-top: 15px;
+  }
+  .cart h1 {
+    font-size: 24px;
+  }
+  .cart h1::before {
+    width: 15%;
+    left: 44%;
+  }
+  .makeStyles-root-1 {
+    width: 100% !important;
+  }
+  .makeStyles-heading-2 {
+    font-size: 16px !important;
+  }
+  .MuiAccordionSummary-content {
+    display: block !important;
+  }
+  .cart__right {
+    border: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .cart__right-buttons {
+    text-align: center;
+  }
+  .cart__desktop {
+    display: none;
+  }
+  .cart__mobile {
+    display: block;
+    padding-left: 10px;
+  }
+  .cart__mobile h5 {
+    margin-top: 0;
+    font-size: 16px;
+  }
+  .cart__mobile .dropbtn {
+    font-size: 18px;
+    margin-top: -5px;
+  }
+  .cart__mobile p {
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+  .cart__mobile .dropdown-content {
+    min-width: auto;
+    left: -65px;
+  }
+  .cart__mobile .dropdown-content img {
+    width: 14px;
+  }
+  .cart__mobile .dropdown-content a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .cart__mobile .dropdown-content a:nth-child(3) {
+    margin-right: 0px;
+  }
+  .cart__btn {
+    text-align: left;
+    margin-top: 20px;
+  }
+  .checkbtn {
+    width: auto;
+  }
+}/*# sourceMappingURL=Cart.css.map */

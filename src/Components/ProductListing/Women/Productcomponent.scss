@@ -1,0 +1,52 @@
+@import '../../../Sass/Base/variables';
+
+.product {
+    a {
+        text-decoration: none;
+    }
+
+    &__image img {
+        height: 382px;
+        object-fit: contain;
+        width: 100%;
+    }
+
+    &__card {
+        margin-bottom: $margin-lv-4;
+    }
+
+    &__title {
+        color: $product-text;
+        font-size: 14px;
+        font-weight: 600;
+        height: 15px;
+        overflow: hidden;
+        margin-top: $margin-lv-2;
+
+        &:hover {
+            text-decoration: none;
+            color: $product-text;
+        }
+    }
+
+    &__price {
+        color: $product-text;
+        font-size: 14px;
+        margin-bottom: $margin-lv-2;
+    }
+
+}
+
+@include responsive(medium) {
+
+    .product__image img {
+        height: 230px;
+    }
+}
+
+@include responsive(tablet) {
+
+    .product__image img {
+        height: 196px;
+    }
+}

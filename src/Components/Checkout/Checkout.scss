@@ -1,0 +1,850 @@
+@import '../../Sass/Base/variables';
+
+
+.form input[type="checkbox"]:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    content: "\f096";
+    opacity: 1 !important;
+    margin-top: -25px;
+    appearance: none;
+    background: #fff;
+    color: $primary-color;
+  }
+  
+  .form input[type="checkbox"]:checked:before {
+    content: "\f046";
+  }
+  
+  .form input[type="checkbox"] {
+    font-size: 20px;
+    appearance: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+.checkout {
+    margin: $margin-lv-7 + $margin-lv-2 0;
+
+    h1 {
+        color: $product-text;
+        font-size: 32px;
+        position: relative;
+        margin-bottom: $margin-lv-7;
+    }
+
+    h1::before {
+        content: "";
+        background-color: $primary-color;
+        width: 7%;
+        position: absolute;
+        height: 5px;
+        bottom: -25%;
+        left: 47%;
+    }
+
+    &__left {
+        h3 {
+            font-size: 28px;
+            margin-bottom: $margin-lv-3;
+        }
+
+        h5 {
+            font-size: 16px;
+            color: #72777F;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        h4 {
+            color: $product-text;
+            font-size: 16px;
+            margin-bottom: $margin-lv-1;
+        }
+
+        .MuiAccordionSummary-expandIconWrapper {
+            display: none;
+        }
+
+        label {
+            color: #181C24;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: 'Muli';
+        }
+
+        input {
+            width: 90%;
+            font-family: 'Muli';
+            font-size: 14px;
+        }
+
+        select {
+            width: 90%;
+            font-family: 'Muli';
+            font-size: 14px;
+        }
+
+        .blank-space {
+            visibility: hidden;
+            margin-bottom: $margin-lv-5;
+        }
+
+        .address2-label {
+            @include flex-props;
+            width: 90%;
+
+            span {
+                color: #545D63;
+            }
+        }
+
+        .checkout-buttons {
+            text-align: center;
+            float: left;
+            width: 95%;
+            margin: $margin-lv-5 0;
+
+            button {
+                margin: $margin-lv-5 0;
+            }
+        }
+
+        .state-align {
+            width: 94%;
+        }
+
+        &-guest {
+            margin-bottom: $margin-lv-6;
+        }
+
+        &-steps {
+            margin-top: $margin-lv-6;
+
+            h4 {
+                font-size: 18px;
+                border-top: 1px solid #B5B7BC;
+                padding: 10px 0;
+                margin-bottom: 0px;
+                color: #72777F;
+                width: 95%;
+            }
+
+            h4:last-child {
+                border-bottom: 1px solid #B5B7BC;
+            }
+        }
+
+        // .shipmethods {
+        //     padding-left: $padding-lv-4;
+
+        //     input {
+        //         width: 15px;
+        //     }
+
+        //     .form-check {
+        //         padding-left: 0px;
+        //     }
+        // }
+
+        // .paymentmothods {
+        //     padding-left: $padding-lv-4;
+
+        //     .form-check {
+        //         padding-left: 0px;
+        //     }
+
+        //     .card-radio {
+        //         width: 15px;
+        //     }
+        // }
+
+        &-stepper {
+            .css-16r9pk3 {
+                max-width: 100% !important;
+            }
+
+            .css-vnkopk-MuiStepLabel-iconContainer {
+                display: none;
+            }
+
+            .css-14yr603-MuiStepContent-root {
+                border-left: 0px;
+
+            }
+
+            .css-8t49rw-MuiStepConnector-line {
+                border-color: $teritary-color;
+            }
+
+            .css-1pe7n21-MuiStepConnector-root {
+                display: none;
+            }
+
+            .css-14yr603-MuiStepContent-root {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .css-1mz1l2x-MuiStepContent-root {
+                margin: 0px;
+                padding: 0px;
+            }
+        }
+    }
+
+    &__right {
+
+        h4 {
+            font-size: 20px;
+            color: #172026;
+            margin-bottom: 20px;
+        }
+
+        &-signin {
+            @include flex-props;
+            border: 1px solid #D1D3D6;
+            padding: $padding-lv-3;
+            margin-bottom: $margin-lv-4;
+
+            h5 {
+                width: 60%;
+                font-size: 18px;
+            }
+        }
+
+        &-summary {
+            border: 1px solid #D1D3D6;
+            padding: $padding-lv-3;
+
+            div {
+                @include flex-props;
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.shipmethods {
+    margin: $margin-lv-3 * 3 0;
+
+    h1 {
+        color: $product-text;
+        font-size: 32px;
+        position: relative;
+        margin-bottom: $margin-lv-7;
+    }
+
+    h1::before {
+        content: "";
+        background-color: $primary-color;
+        width: 7%;
+        position: absolute;
+        height: 5px;
+        bottom: -25%;
+        left: 47%;
+    }
+
+    h3 {
+        font-size: 28px;
+        margin-bottom: $margin-lv-3;
+    }
+
+    &__info {
+        border: 1px solid #D1D3D6;
+        padding: $padding-lv-3;
+        width: 95%;
+        margin-bottom: $margin-lv-6;
+
+        h6 {
+            font-size: 14px;
+            margin-bottom: $margin-lv-2;
+            font-weight: 600;
+        }
+
+        &-details {
+            @include flex-props;
+
+            span {
+                font-size: 14px;
+                color: $primary-color;
+            }
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        p {
+            font-size: 14px;
+            color: #535965;
+            margin-bottom: 0;
+        }
+    }
+
+    &__ships {
+        h4 {
+            font-size: 16px;
+            color: $product-text;
+            margin-bottom: $margin-lv-4;
+        }
+
+        label {
+            font-size: 14px;
+            margin-bottom: $margin-lv-2;
+            font-weight: normal;
+        }
+        .form-check-input:checked{
+            background-color: inherit;
+            border-color: inherit;
+        }
+        .checkout-buttons {
+            text-align: center;
+            float: left;
+            width: 95%;
+            margin: $margin-lv-5 0;
+        }
+
+        .form-check {
+            padding-left: $padding-lv-4;
+        }
+
+        .checkout__left-steps {
+            width: 95%;
+            float: left;
+            padding: 10px 0;
+        }
+        input{
+            font-size: 14px;
+        }
+    }
+}
+
+.paymentmethods {
+    margin: $margin-lv-3 * 3 0;
+
+    h1 {
+        color: $product-text;
+        font-size: 32px;
+        position: relative;
+        margin-bottom: $margin-lv-7;
+    }
+
+    h1::before {
+        content: "";
+        background-color: $primary-color;
+        width: 7%;
+        position: absolute;
+        height: 5px;
+        bottom: -25%;
+        left: 47%;
+    }
+
+    .paypal-check {
+        border: 1px solid #D1D3D6;
+        border-right: 0px;
+        border-left: 0px;
+        width: 100%;
+        padding: 15px 25px;
+
+        label {
+            margin-bottom: 0px;
+        }
+
+
+    }
+
+    .state-align input {
+        width: 70%;
+    }
+
+    .cvv {
+        display: flex;
+
+        span {
+            font-size: 16px;
+            margin-left: $margin-lv-2;
+        }
+    }
+
+    .save-card {
+        color: #181C24;
+        font-size: 14px;
+    }
+    .paypal-label{
+        font-size: 16px;
+        font-weight: normal;
+    }
+}
+
+.revieworder {
+    margin: $margin-lv-3 * 3 0;
+
+    h1 {
+        color: $product-text;
+        font-size: 32px;
+        position: relative;
+        margin-bottom: $margin-lv-7;
+    }
+
+    .totalitems {
+        margin-bottom: $margin-lv-4;
+    }
+
+    h1::before {
+        content: "";
+        background-color: $primary-color;
+        width: 7%;
+        position: absolute;
+        height: 5px;
+        bottom: -25%;
+        left: 47%;
+    }
+
+    h3 {
+        font-size: 28px;
+        margin-bottom: $margin-lv-3;
+    }
+
+    .items-inorder {
+        display: flex;
+
+        img {
+            width: 80px;
+        }
+
+        div {
+            padding-left: $padding-lv-3;
+        }
+    }
+
+    .checkout-buttons {
+        text-align: center;
+
+        p {
+            font-size: 14px;
+            margin-top: $margin-lv-4;
+            color: $product-text;
+
+            a {
+                color: $product-text;
+                text-decoration: underline;
+                font-weight: 600;
+
+                &:hover {
+                    color: $product-text;
+                }
+            }
+        }
+    }
+}
+
+.ordersuccessful {
+    margin: $margin-lv-3 * 3 0;
+
+    h1 {
+        color: $product-text;
+        font-size: 32px;
+        position: relative;
+        margin-bottom: $margin-lv-7;
+    }
+
+    h1::before {
+        content: "";
+        background-color: $primary-color;
+        width: 7%;
+        position: absolute;
+        height: 5px;
+        bottom: -25%;
+        left: 47%;
+    }
+
+    &__info {
+        margin-bottom: $margin-lv-6;
+        margin-top: $margin-lv-4;
+
+        h6 {
+            font-size: 14px;
+            margin-bottom: $margin-lv-2;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 0px;
+        }
+
+        &-items {
+            margin-top: $margin-lv-3;
+        }
+    }
+
+    &__message {
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .items-inorder {
+        display: flex;
+        margin-top: 0;
+
+        img {
+            width: 90px;
+        }
+
+        div {
+            padding-left: $padding-lv-3;
+        }
+    }
+
+    .ordersuccessful-summary {
+        background-color: $primary-color;
+        padding: $padding-lv-5 * 2;
+        text-align: center;
+
+        h2 {
+            color: $teritary-color;
+            font-size: 28px;
+        }
+    }
+
+    &__socialicons {
+        margin-top: $margin-lv-4 * 2;
+
+        a {
+            color: $teritary-color;
+            margin: 0 10px;
+        }
+    }
+
+}
+
+.mobile-btn {
+    display: none;
+}
+
+.edit-mbl {
+    display: none;
+}
+.summary-total p{
+    font-weight: 600;
+    font-size: 16px !important;
+}
+
+@include responsive(tablet) {
+
+    .checkout__left .blank-space {
+        display: none;
+    }
+    .checkout__left input{
+        width: 100%;
+    }
+    .checkout__left select{
+        width: 100%;
+    }
+    .checkout__left .state-align{
+        width: 100%;
+    }
+    .checkout__left .checkout-buttons{
+        width: 100%;
+    }
+    .checkout__left-steps h4{
+        width: 100%;
+    }
+    .checkout__left .address2-label{
+        width: 100%;
+    }
+    .checkout__right-signin{
+        display: none;
+    }
+    .checkout__right-summary{
+        margin-top: $margin-lv-4;
+        border: 0px;
+        padding: 0px;
+    }
+    .shipmethods__info{
+        width: 100%;
+    }
+    .shipmethods__ships .checkout__left-steps{
+        width: 100%;
+    }
+    .shipmethods__ships .checkout-buttons{
+        width: 100%;
+    }
+    .ordersuccessful .ordersuccessful-summary{
+        display: none;
+    }
+
+
+}
+
+@include responsive(phone) {
+
+    .checkout {
+        margin: $margin-lv-4 0;
+
+        h1 {
+            font-size: 24px;
+
+            &::before {
+                width: 15%;
+                left: 43%;
+            }
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        &__left {
+            .blank-space {
+                display: none;
+            }
+
+            .state-align {
+                width: 100%;
+            }
+
+            input {
+                width: 100%;
+            }
+
+            select {
+                width: 100%;
+            }
+
+            .mobile-btn {
+                display: block;
+            }
+
+            .desktop-btn {
+                display: none;
+            }
+
+            .checkout-buttons {
+                width: 50%;
+                margin: auto;
+                float: none;
+                overflow: hidden;
+            }
+
+            &-steps {
+                h4 {
+                    font-size: 16px;
+                    width: 100%;
+                }
+            }
+        }
+
+        &__right {
+            &-signin {
+                display: none;
+            }
+
+            h4 {
+                font-size: 16px;
+            }
+
+            &-summary {
+                border: 0px;
+                padding: 0;
+                margin-top: $margin-lv-4;
+
+                h4 {
+                    margin-bottom: $margin-lv-2;
+                }
+
+                div p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .shipmethods {
+        margin: $margin-lv-4 0;
+
+        h1 {
+            font-size: 24px;
+
+            &::before {
+                width: 15%;
+                left: 43%;
+            }
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        .mbl-number {
+            margin-bottom: $margin-lv-3;
+        }
+
+        &__info {
+            width: 100%;
+
+            &-details {
+                .edit-desktop {
+                    display: none;
+                }
+
+                .edit-mbl {
+                    display: block;
+                }
+            }
+        }
+
+        .mobile-btn {
+            display: block;
+        }
+
+        .desktop-btn {
+            display: none;
+        }
+
+        .checkout-buttons {
+            width: 50%;
+            margin: auto;
+            float: none;
+            overflow: hidden;
+        }
+    }
+
+    .paymentmethods {
+        margin: $margin-lv-4 0;
+
+        h1 {
+            font-size: 24px;
+
+            &::before {
+                width: 15%;
+                left: 43%;
+            }
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        .mbl-number {
+            margin-bottom: $margin-lv-3;
+        }
+
+        .mobile-btn {
+            display: block;
+            margin-top: $margin-lv-5;
+        }
+
+        .desktop-btn {
+            display: none;
+        }
+
+        .checkout-buttons {
+            width: 50%;
+            margin: auto;
+            float: none;
+            overflow: hidden;
+        }
+
+    }
+
+    .revieworder {
+        margin: $margin-lv-4 0;
+
+        h1 {
+            font-size: 24px;
+
+            &::before {
+                width: 15%;
+                left: 43%;
+            }
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        .edit-desktop {
+            display: none;
+        }
+
+        .edit-mbl {
+            display: block;
+        }
+
+        .mbl-number {
+            margin-bottom: $margin-lv-3;
+        }
+
+        .items-inorder {
+            margin-bottom: $margin-lv-4;
+        }
+    }
+
+    .ordersuccessful {
+        margin: $margin-lv-4 0;
+
+        h1 {
+            font-size: 24px;
+
+            &::before {
+                width: 15%;
+                left: 43%;
+            }
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        .ordersuccessful-summary {
+            display: none;
+        }
+
+        .items-inorder {
+            margin-bottom: $margin-lv-4;
+        }
+
+        &__info {
+            margin-top: 0px;
+
+            h6 {
+                margin-top: $margin-lv-4;
+            }
+        }
+    }
+
+}
+
+@include responsive(desktop) {
+    .checkout {
+        margin-top: $margin-lv-3 * 5 + $margin-lv-2;
+    }
+
+    .shipmethods {
+        margin-top: $margin-lv-3 * 5 + $margin-lv-2;
+    }
+
+    .paymentmethods {
+        margin-top: $margin-lv-3 * 5 + $margin-lv-2;
+    }
+
+    .revieworder {
+        margin-top: $margin-lv-3 * 5 + $margin-lv-2;
+    }
+
+    .ordersuccessful {
+        margin-top: $margin-lv-3 * 5 + $margin-lv-2;
+    }
+}
+
